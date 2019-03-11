@@ -4,9 +4,6 @@
     bottom: 0;
     left: 0;
     right: 0;
-    background-image: url("../img/homeBackground.jpg");
-    background-size: cover;
-    background-position: right bottom;
     overflow: auto;
 }
 
@@ -14,11 +11,38 @@
     width: 100%;
     height: 60%;
     background-color: white;
+    text-align: center;
+}
+
+.self-intro > .subtitle {
+    font-family: Arial;
+    font-weight: bold;
+    color: #808080;
+}
+
+.self-intro > .content {
+    width: 80%;
+    max-width: 950px;
+    font-family: Arial;
+    color: #293241;
+    display: inline-block;
 }
 
 .slogan {
     width: 100%;
     height: 40%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.slogan > .content {
+    font-family: Arial;
+    display: inline-block;
+    color: white;
+    text-shadow: 0 0 5px #293241;
+    font-weight: bold;
 }
 
 .education {
@@ -43,4 +67,64 @@
     width: 100%;
     height: 50%;
     background-color: #EEEEEE;
+}
+
+.title {
+    width: 100%;
+    height: 12vh;
+    text-align: center;
+    line-height: 12vh;
+    font-family: Arial;
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #3D5A80;
+}
+
+b {
+    color: #EE6C4D;
+}
+
+@media screen and (max-width: 760px) {
+    .self-intro > .title {
+        font-size: 1.6rem;
+    }
+    
+    .self-intro > .subtitle {
+        font-size: 1rem;
+        line-height: 1.5rem;
+        padding-bottom: 0.5rem;
+    }
+    
+    .self-intro > .content {
+        font-size: 1rem;
+        line-height: 1.2rem;
+        text-align: justify;
+        padding-top: 0.5rem;
+    } 
+
+    .slogan > .content {
+        font-size: 1.6rem;
+    }
+}
+@media screen and (min-width: 761px) {
+    .self-intro > .title {
+        font-size: 2.5rem;
+    }
+    
+    .self-intro > .subtitle {
+        font-size: 1.6rem;
+        line-height: 2.5rem;
+        padding-bottom: 2rem;
+    }
+    
+    .self-intro > .content {
+        font-size: 1.4rem;
+        line-height: 2rem;
+        text-align: justify;
+        padding-top: 1rem;
+    }
+
+    .slogan > .content {
+        font-size: 2.5rem;
+    }
 }

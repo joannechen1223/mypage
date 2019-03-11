@@ -1,3 +1,9 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
 .header {
     position: fixed;
     background-color: #98CED9;
@@ -7,19 +13,24 @@
     bottom: 94vh;
 }
 
-.header .title {
+.header #title {
     color: #3D5A80;
     font-family: Arial;
     font-size: 1.4rem;
     height: 6vh;
     line-height: 6vh;
     padding-left: 3vh;
+    font-weight: bold;
 }
 
-.mypage {
+.mypageApp {
     position: fixed;
     top: 0;
     left: 0;
     right: 0;
     bottom: 0;
+    background-image: url("../img/homeBackground.jpg");
+    background-size: cover;
+    background-position: right bottom;
+    overflow: auto;
 }
