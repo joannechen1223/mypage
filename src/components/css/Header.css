@@ -1,0 +1,25 @@
+.header {
+    position: fixed;
+    background-color: #98CED9;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 94vh;
+}
+
+.header .title {
+    color: #3D5A80;
+    font-family: Arial;
+    font-size: 1.4rem;
+    height: 6vh;
+    line-height: 6vh;
+    padding-left: 3vh;
+}
+
+.mypage {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
