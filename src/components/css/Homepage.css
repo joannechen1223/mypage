@@ -7,48 +7,95 @@
     overflow: auto;
 }
 
+.container {
+    width: 80%;
+    max-width: 950px;
+    display: inline-block;
+}
+
 .self-intro {
     width: 100%;
-    height: 60%;
-    background-color: white;
+    min-height: 40%;
     text-align: center;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.self-intro > .title {
+    color: white;
+    text-shadow: 0 0 5px #293241;
 }
 
 .self-intro > .subtitle {
     font-family: Arial;
     font-weight: bold;
-    color: #808080;
+    color: #E0E0E0;
 }
 
 .self-intro > .content {
     width: 80%;
     max-width: 950px;
     font-family: Arial;
-    color: #293241;
-    display: inline-block;
-}
-
-.slogan {
-    width: 100%;
-    height: 40%;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    text-align: center;
-}
-
-.slogan > .content {
-    font-family: Arial;
     display: inline-block;
     color: white;
     text-shadow: 0 0 5px #293241;
-    font-weight: bold;
 }
+
+
+.contactButton {
+    font-family: Arial;  
+    display: inline-block;
+    background-color: #EE6C4D;
+    color: white;
+}
+
 
 .education {
     width: 100%;
-    height: 50%;
+    min-height: 50%;
     background-color: white;
+    text-align: center;
+}
+
+.education > .container > .subtitle {
+    float: left;
+    font-family: Arial;
+    color: #293241;
+    width: 100%;
+    text-align: left;
+}
+
+#school {
+    font-weight: bold;
+}
+
+.education > .container > .remark {
+    font-family: Arial;
+    color: #808080;
+    width: 50%;
+    font-style: oblique;
+    float: left;
+}
+
+.education > .container > hr {
+    width: 100%;
+}
+
+#time {
+    text-align: left;
+}
+
+#city {
+    text-align: right;
+}
+
+#relevant-coursework {
+    font-weight: bold;
+    padding: 2rem 0;
+    color: #3D5A80;
+}
+
+.course {
+    width: 100%;
 }
 
 .experience {
@@ -71,28 +118,30 @@
 
 .title {
     width: 100%;
-    height: 12vh;
+    
     text-align: center;
-    line-height: 12vh;
+    
     font-family: Arial;
-    font-size: 1.8rem;
     font-weight: bold;
-    color: #3D5A80;
+    color: #EE6C4D;
 }
 
 b {
     color: #EE6C4D;
+    text-shadow: 0 0 5px #293241;
 }
 
 @media screen and (max-width: 760px) {
     .self-intro > .title {
         font-size: 1.6rem;
+        height: 3rem;
+        line-height: 3rem;
     }
     
     .self-intro > .subtitle {
         font-size: 1rem;
         line-height: 1.5rem;
-        padding-bottom: 0.5rem;
+        padding: 0.8rem 0;
     }
     
     .self-intro > .content {
@@ -100,21 +149,51 @@ b {
         line-height: 1.2rem;
         text-align: justify;
         padding-top: 0.5rem;
+
     } 
 
-    .slogan > .content {
-        font-size: 1.6rem;
+    .education > .container > .subtitle {
+        font-size: 1rem;
+        padding: 0.3rem 0;
     }
+
+    .education > .container > .remark {
+        font-size: 1rem;
+        padding: 0.3rem 0 1.5rem 0;
+    }
+    
+
+    .contact {
+        padding: 1.5rem 0;
+    }
+
+    .contactButton {
+        border: 1.5px solid #EE6C4D;
+        font-size: 1rem;
+        padding: 0.5rem 1rem;
+        border-radius: 0.8rem;
+    }
+
+    .title {
+        font-size: 1rem;
+        height: 3rem;
+        line-height: 3rem;
+        padding: 1rem 0;
+    }
+
+    
 }
 @media screen and (min-width: 761px) {
     .self-intro > .title {
         font-size: 2.5rem;
+        height: 5rem;
+        line-height: 5rem;
     }
     
     .self-intro > .subtitle {
         font-size: 1.6rem;
         line-height: 2.5rem;
-        padding-bottom: 2rem;
+        padding: 2rem 0;
     }
     
     .self-intro > .content {
@@ -124,7 +203,34 @@ b {
         padding-top: 1rem;
     }
 
-    .slogan > .content {
-        font-size: 2.5rem;
+    
+
+    .contact {
+        padding: 3rem 0;
+    }
+
+    .contactButton {
+        border: 2px solid #EE6C4D;
+        font-size: 1.6rem;
+        padding: 0.5rem 1.8rem;
+        border-radius: 0.8rem;
+    }
+
+    .education > .container > .subtitle {
+        font-size: 1.3rem;
+        padding: 0.5rem 0;
+    }
+
+    .education > .container > .remark {
+        font-size: 1.3rem;
+        padding: 0.5rem 0 1.8rem 0;
+    }
+
+    .title {
+        font-size: 1.6rem;
+        height: 3rem;
+        line-height: 3rem;
+        padding: 1.5rem 0;
+
     }
 }
