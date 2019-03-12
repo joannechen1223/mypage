@@ -96,7 +96,31 @@
 
 .course {
     width: 100%;
+    text-align: left;
 }
+
+
+
+.course > .course-icon-div {
+    float: left;
+    text-align: center;
+}
+
+.course > .course-content {
+    float: right;
+    margin: 0;
+}
+
+.course-related-tile {
+    font-family: Arial;
+    color: #293241;
+}
+
+.course-name {
+    color: #808080;
+    font-family: Arial;
+}
+
 
 .experience {
     width: 100%;
@@ -161,7 +185,32 @@ b {
         font-size: 1rem;
         padding: 0.3rem 0 1.5rem 0;
     }
+
+    .course {
+        margin: 1rem 0 2rem 0;
+        
+    }
+
+    .course > .course-icon-div > .course-icon {
+        width: 10vw;
+    }
     
+    .course > .course-icon-div {
+        width: 18%;
+    }
+    
+    .course > .course-content {
+        width: 75%;
+    }
+
+    .course-related-tile {
+        font-size: 1rem;
+    }
+
+    .course-name {
+        padding: 0.5rem 0;
+        line-height: 1.5rem;
+    }
 
     .contact {
         padding: 1.5rem 0;
@@ -224,6 +273,32 @@ b {
     .education > .container > .remark {
         font-size: 1.3rem;
         padding: 0.5rem 0 1.8rem 0;
+    }
+
+    .course {
+        margin: 2rem 0 4rem 0;
+    }
+
+    .course > .course-icon-div > .course-icon {
+        width: 90px;
+    }
+
+    .course > .course-icon-div {
+        width: 15%;
+    }
+    
+    .course > .course-content {
+        width: 80%;
+    }
+
+    .course-related-tile {
+        font-size: 1.3rem;
+    }
+
+    .course-name {
+        font-size: 1.3rem;
+        padding: 1rem 0;
+        line-height: 2rem;
     }
 
     .title {
