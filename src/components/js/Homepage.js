@@ -1,21 +1,54 @@
 import React, { Component } from 'react';
+import Experience from './Experience';
+import Popup from './Popup';
 import '../css/Homepage.css';
 
+
+
 class Homepage extends Component {
-  
+  constructor(){
+    super();
+    this.state = {
+      popupDisplay: 'none',
+    }
+
+    this.handleContactButtonClick = this.handleContactButtonClick.bind(this);
+    this.handleContactClose = this.handleContactClose.bind(this);
+  }
+
+  handleContactButtonClick() {
+    this.setState({
+      popupDisplay: 'block',
+    });
+  }
+
+  handleContactClose() {
+    this.setState({
+      popupDisplay: 'none',
+    });
+  }
+
   render() {
-    
+    const popupStyle = {display: "none",};
+    console.log(popupStyle);
     return (
       <div className="homepage">
         <div className="self-intro">
           <p className="title">JOU-AN (JOANNE) CHEN</p>
-          <div className="subtitle"><b>Always Prepared to be amazed.</b></div>
+          <div className="subtitle"><b>Always Prepared to be Amazed.</b></div>
           <div className="content">Hi! I am Joanne, a college student as well as a self learner in web development. I am interested in the industries of technology and finance, and looking forward to new challenges in different fields.</div>
           <div className="contact">
-            <button className="contactButton">CONTACT ME</button>
+            <button
+              className="contactButton"
+              onClick={this.handleContactButtonClick}
+            >CONTACT ME</button>
           </div>
         </div>
-        
+        <Popup
+          display={this.state.popupDisplay}
+          handleContactButtonClick={this.handleContactButtonClick}
+          handleContactClose={this.handleContactClose}
+        />
         <div className="education">
           <div className="title">{`< EDUCATION />`}</div>
           <div className="container">
@@ -70,7 +103,10 @@ class Homepage extends Component {
           </div>
         </div>
         <div className="experience">
-          <div className="title">{`< EXPERIENCE />`}</div>        
+          <div className="title">{`< EXPERIENCE />`}</div>
+          <div className="container">
+            <Experience />
+          </div>
         </div>
         <div className="skill">
           <div className="title">{`< TECHNICAL SKILL />`}</div>
