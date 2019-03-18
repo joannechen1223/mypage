@@ -48,6 +48,12 @@
     color: white;
 }
 
+.contactButton:hover {
+    background-color: rgb(212, 76, 42);
+    border-color: rgb(212, 76, 42);
+    cursor: pointer;
+}
+
 
 .education {
     width: 100%;

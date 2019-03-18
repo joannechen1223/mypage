@@ -1,0 +1,35 @@
+.footer {
+    min-height: 10%;
+    background-color: rgba(0,0,0,0.7);
+    color: white;
+    text-align: center;
+}
+
+
+
+@media screen and (max-width: 760px) {
+    /*mobile*/
+    .footer-contact{
+        margin: 1rem 0;
+        line-height: 1.2rem;
+        font-size: 0.6rem;
+    }
+
+    .hyperlink-icon {
+        width: 10%;
+        padding: 0 5% 5% 5%;
+    }
+}
+@media screen and (min-width: 761px) {
+    /*laptop*/
+    .footer-contact{
+        margin: 2rem 0;
+        line-height: 2rem;
+        font-size: 1rem;
+    }
+
+    .hyperlink-icon {
+        width: 5%;
+        padding: 0 5% 3% 5%;
+    }
+}

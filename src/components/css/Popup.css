@@ -1,5 +1,4 @@
 .modal {
-    
     position: fixed; /* Stay in place */
     z-index: 1; /* Sit on top */
     left: 0;
@@ -7,30 +6,120 @@
     width: 100%; /* Full width */
     height: 100%; /* Full height */
     overflow: auto; /* Enable scroll if needed */
-    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    background-color: rgba(0,0,0,0.8); /* Black w/ opacity */
+    
 }
   
 /* Modal Content/Box */
 .modal-content {
+    position: absolute;
     background-color: #fefefe;
-    margin: 15% auto; /* 15% from the top and centered */
+    margin: 20% auto; /* 15% from the top and centered */
     padding: 20px;
     border: 1px solid #888;
-    width: 80%; /* Could be more or less, depending on screen size */
+    width: 70%; /* Could be more or less, depending on screen size */
+    max-width: 700px;
     text-align: center;
-  }
+    height: 25vh;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    border-radius: 10px;
+}
   
   /* The Close Button */
-  .close {
+.close {
+    position: absolute;
     color: #aaa;
     float: right;
     font-size: 28px;
     font-weight: bold;
-  }
+    z-index: 10;
+    right: 3vmin;
+    top: 2vmin;
+}
   
-  .close:hover,
-  .close:focus {
+.close:hover,
+.close:focus {
     color: black;
     text-decoration: none;
     cursor: pointer;
+}
+
+.content-block#email,
+.content-block#phone{
+  position: relative;
+  width: 100%;
+  height: 10vh;
+}
+
+.contact-icon {
+  position: absolute;
+  margin-top: 3vmin;
+}
+
+.contact-content {
+  width: 80%;
+  float: right;
+  text-align: left;
+  color: #293241;
+}
+
+.close-button {
+  font-family: Arial;  
+  display: inline-block;
+  background-color: #3D5A80;
+  color: white;
+}
+
+.close-button:hover {
+  background-color: rgb(35, 62, 97);
+  cursor: pointer;
+}
+
+@media screen and (max-width: 760px) {
+  /*mobile*/
+  .contact-icon {
+    width: 10%;
+    float: left;
+    left: 0;
   }
+
+  .contact-content {
+    line-height: 1.5rem;
+    margin-top: 3vmin;
+    font-size: 1rem;
+    width: 83%;
+  }
+
+  .close-button {
+    border: 1.5px solid #3D5A80;
+    font-size: 1rem;
+    padding: 0.5rem 1rem;
+    border-radius: 0.8rem;
+  }
+}
+@media screen and (min-width: 761px) {
+  /*laptop*/
+  .contact-icon {
+    width: 5%;
+    float: left;
+    left: 10%;
+  }
+
+  .contact-content {
+    line-height: 2rem;
+    margin-top: 3vmin;
+    font-size: 1.4rem;
+  }
+
+  .close-button {
+    border: 2px solid #3D5A80;
+    font-size: 1.6rem;
+    padding: 0.5rem 1.8rem;
+    border-radius: 0.8rem;
+  }
+
+  
+}

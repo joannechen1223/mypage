@@ -7,7 +7,7 @@ class MypageApp extends Component {
   
   render() {
     return (
-      <div className="mypageApp">
+      <div className="mypageApp" >
         <Header />
         <Router>
           <Switch>

@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import Experience from './Experience';
 import Popup from './Popup';
+import Footer from './Footer';
 import '../css/Homepage.css';
 
 
@@ -23,6 +24,7 @@ class Homepage extends Component {
   }
 
   handleContactClose() {
+    console.log("in handleContactClose");
     this.setState({
       popupDisplay: 'none',
     });
@@ -114,6 +116,7 @@ class Homepage extends Component {
         <div className="extracurricular">
           <div className="title">{`< EXTRACURRICULAR />`}</div>
         </div>
+        <Footer />
       </div>
     );
   }
